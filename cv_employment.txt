@@ -1,0 +1,29 @@
+{date = {Since 2001},
+title = {CNRS Researcher},
+details = {Institut Jean Nicod (IJN), ENS, PSL, EHESS, CNRS}
+}
+
+{date = {Since 2023},
+title = {Member of IJN Laboratory Council},
+details = {}
+}
+
+{date = {2015 – 2018},
+title = {Head of IJN Research Team},
+details = {Semantics, Data and Models}
+}
+
+{date = {2014 – 2020},
+title = {Head of ENS Program},
+details = {New Ideas in Linguistics}
+}
+
+{date = {2017},
+title = {Invited Researcher},
+details = {University of Birmingham}
+}
+
+{date = {2014},
+title = {Visiting Researcher},
+details = {Massachusetts Institute of Technology}
+}

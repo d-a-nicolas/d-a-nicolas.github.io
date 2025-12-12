@@ -1,0 +1,124 @@
+{year = {2023},
+title = {Collective Nouns and the Distribution Problem.},
+details = {Bilkent University, Ankara, Turkey.}
+}
+
+{year = {2019},
+title = {Mereological Choices for Count Nouns and Mass Nouns.},
+details = {University of Utrecht, Netherlands.}
+}
+
+{year = {2019},
+title = {The Unexplained Symmetric Reading of Reciprocal Sentences.},
+details = {Poster at workshop on Reciprocals, University of Utrecht.}
+}
+
+{year = {2019},
+title = {Grammatical Mood and Ambiguity Aversion.},
+details = {10th Int. Conf. of Experimental Linguistics, Lisbon, Portugal.}
+}
+
+{year = {2019},
+title = {Mereological Choices for Count Nouns and Mass Nouns.},
+details = {Arché, University of St Andrews, UK.}
+}
+
+{year = {2018},
+title = {Pluriels et Méréologie.},
+details = {Institut Henri Poincaré, Nancy, France.}
+}
+
+{year = {2018},
+title = {Plurals and Mereology.},
+details = {Heinrich-Heine Dusseldorf University, Germany.}
+}
+
+{year = {2018},
+title = {Mereological Choices for Count Nouns and Mass Nouns.},
+details = {Yonsei University, Seoul, Korea.}
+}
+
+{year = {2018},
+title = {Matter and Mixtures.},
+details = {Conference SOPHA 2018, Louvain-la-Neuve, Belgique.}
+}
+
+{year = {2018},
+title = {Comments on Chapters 3 and 6 of Florio & Linnebo.},
+details = {Workshop "The many and the one", Oslo, Norway.}
+}
+
+{year = {2018},
+title = {Mereological Choices for Count Nouns and Mass Nouns.},
+details = {University of Leeds, UK.}
+}
+
+{year = {2018},
+title = {Mereological Choices for Count Nouns and Mass Nouns.},
+details = {Conference Count-Mass Distinction, Bochum, Germany.}
+}
+
+{year = {2017},
+title = {Deux Pommes et Demie.},
+details = {Workshop Quanti, Montpellier University, France.}
+}
+
+{year = {2017},
+title = {Matière et Mélanges.},
+details = {Institut Henri Poincaré, Nancy, France.}
+}
+
+{year = {2017},
+title = {Matter and Mixtures.},
+details = {Yonsei University, Songdo, Korea.}
+}
+
+{year = {2017},
+title = {Mass and Count: Grammar, Ambiguity, and Polysemy.},
+details = {Workshop in honor of Sylvain Bromberger, ENS, Paris.}
+}
+
+{year = {2017},
+title = {Matter and Mixtures.},
+details = {University of Birmingham, UK.}
+}
+
+{year = {2017},
+title = {Things and Stuff: Does Language Influence Thought?},
+details = {IAS, University of Birmingham, UK.}
+}
+
+{year = {2016},
+title = {Mass Nouns.},
+details = {LIRMM, Montpellier, France.}
+}
+
+{year = {2015},
+title = {Matter and Mixtures.},
+details = {University of Manchester, UK.}
+}
+
+{year = {2015},
+title = {Matière et Mélanges.},
+details = {Conference MassCoLex, University of Strasbourg, France.}
+}
+
+{year = {2015},
+title = {Matter and Mixtures.},
+details = {Institut Jean Nicod, Paris, France.}
+}
+
+{year = {2015},
+title = {Plurals and Mereology.},
+details = {Conference Pluralism, Logic, and Language, Seoul, Korea.}
+}
+
+{year = {2015},
+title = {Plurals and Mereology.},
+details = {Institute of Philosophy, London, UK.}
+}
+
+{year = {2015},
+title = {Derived Mass Nouns, Tropes, States and Events.},
+details = {Conference Nominalizations, Hamburg, Germany.}
+}

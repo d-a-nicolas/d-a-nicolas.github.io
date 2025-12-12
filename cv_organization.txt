@@ -1,0 +1,49 @@
+{date = {Dec 2023},
+title = {15th Syntax and Semantics Conference in Paris},
+details = {Paris, France (with Marta Abrusan & Carlo Geraci)}
+}
+
+{date = {Sept 2016},
+title = {New Ideas in Semantics and Modeling 2016},
+details = {Paris, France (with Claire Beyssade & Alda Mari)}
+}
+
+{date = {Sept 2009},
+title = {Absolute Generality},
+details = {Paris, France (with Øystein Linnebo)}
+}
+
+{date = {Sept 2009},
+title = {Int. Conf. on Tense, Aspect and Modality - Chronos 2009},
+details = {Paris, France (with B. Copley, P. Caudal, C. Kennedy, B. Laca & G. Schaden)}
+}
+
+{date = {May 2009},
+title = {Genericity},
+details = {Paris, France (with Claire Beyssade & Alda Mari)}
+}
+
+{date = {Oct 2007},
+title = {Semantics Beyond Set Theory},
+details = {Paris, France (with Alda Mari)}
+}
+
+{date = {June 2007},
+title = {New Advances on Plurality},
+details = {Paris, France (with Alda Mari)}
+}
+
+{date = {March 2006},
+title = {Journées de Sémantique et Modélisation 2006},
+details = {Bordeaux, France (with Christian Rétoré)}
+}
+
+{date = {March 2005},
+title = {Journées de Sémantique et Modélisation 2005},
+details = {Paris, France (with Lucia Tovena)}
+}
+
+{date = {June 2004},
+title = {Summer school on Reference to Objects},
+details = {Oléron, France (with Roberto Casati)}
+}
