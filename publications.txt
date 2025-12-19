@@ -233,7 +233,7 @@ publisher = {Editions Peeters},
 address = {Leuven, Belgium},
 series = {Biblioth\`{e}que de l'Information Grammaticale},
 isbn = {90-429-1164-5},
-abstract = {},
+abstract = {Cet ouvrage est consacré à l'étude de la distinction linguistique entre noms massifs ('lait', 'mobilier', 'désordre', 'amour'…) et noms comptables ('chat', 'équipe', 'combat', 'chose'…). Les premiers sont normalement invariables, tandis que les seconds s’emploient librement au singulier et au pluriel. Après avoir établi qu’il s’agit bien d’une distinction morpho-syntaxique, l’ouvrage discute la possibilité de caractériser sémantiquement cette distinction. Les recherches existantes ne tiennent compte, essentiellement, que des noms s'appliquant au domaine matériel. Ce travail, au contraire, examine en détail aussi bien les noms concrets qu’abstraits. Il propose de redéfinir les propriétés souvent attribuées aux noms massifs (références distributive et cumulative), grâce, notamment, à une nouvelle notion de partie. Concernant les noms comptables, il montre qu’aucune propriété purement sémantique n’est nécessaire pour qu’un nom soit de ce type. L’ouvrage se termine par l’analyse des conversions (emplois massifs des noms comptables, et vice versa), et du rôle qu’y jouent les facteurs pragmatiques.},
 pdf = {Nicolas-Massif-comptable-Livre},
 }
 
