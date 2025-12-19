@@ -1,21 +1,21 @@
 {date = {Since 2022},
 title = {Natural language ontology: sums, events, and degrees},
-details = {ENS, Paris, France (with Jeremy Kuhn)}
+details = {ENS, France (with Jeremy Kuhn)}
 }
 
 {date = {2020–2021},
 title = {Counting and measuring across languages and domains},
-details = {ENS, Paris, France (with Jeremy Kuhn)}
+details = {ENS, France (with Jeremy Kuhn)}
 }
 
 {date = {2016–2019},
 title = {Master's course in natural language semantics},
-details = {EHESS, Paris, France (with Alda Mari)}
+details = {EHESS, France (with Alda Mari)}
 }
 
 {date = {July 2017},
 title = {Speaking of things and stuff},
-details = {ESSLLI 2017, Toulouse, France (with Salvatore Florio)}
+details = {ESSLLI 2017, France (with Salvatore Florio)}
 }
 
 {date = {2009–2015},
@@ -25,17 +25,17 @@ details = {Paris 4 University, France (with Patrick Caudal & Alda Mari)}
 
 {date = {April 2008},
 title = {The semantics of plurals and mass nouns},
-details = {Journées de Sémantique et Modélisation 2008, Toulouse, France}
+details = {Journées de Sémantique et Modélisation 2008, France}
 }
 
 {date = {March 2006},
 title = {The semantics of plurals},
-details = {Journées de Sémantique et Modélisation 2006, Bordeaux, France}
+details = {Journées de Sémantique et Modélisation 2006, France}
 }
 
 {date = {2000–2001},
 title = {Introduction to the morphology and history of English / Study of language},
-details = {Dept. of Linguistics, UCLA, USA}
+details = {UCLA, USA}
 }
 
 {date = {1999–2000},
@@ -45,5 +45,5 @@ details = {University of Valenciennes, France}
 
 {date = {1994–1997},
 title = {Teaching Assistant},
-details = {Dept. of Psychology, McGill University, Montreal, Canada <p style="font-size: 0.85rem; color: #666; margin-top: 2px;">Courses: History of psychology, Modern psychological theories, Psychology of perception, Psychology of deafness</p>}
+details = {McGill University, Canada <p style="font-size: 0.85rem; color: #666; margin-top: 2px;">History of psychology, Modern psychological theories, Psychology of perception, Psychology of deafness</p>}
 }

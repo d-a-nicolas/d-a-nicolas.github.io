@@ -1,0 +1,19 @@
+{date = {2015},
+title = {Accreditation to Supervise Research (H.D.R.)},
+details = {École Normale Supérieure, France}
+}
+
+{date = {1999},
+title = {Ph.D. in Cognitive Science},
+details = {École Polytechnique, France}
+}
+
+{date = {1994},
+title = {Master’s Degree in Cognitive Science},
+details = {École Polytechnique, France}
+}
+
+{date = {1993},
+title = {M.S. in Engineering (Diplôme d’Ingénieur)},
+details = {École Polytechnique, France}
+}

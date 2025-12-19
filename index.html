@@ -1,24 +1,34 @@
-<!DOCTYPE html> <html lang="en"> <head>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
     <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>David A. NICOLAS - Researcher in Linguistics & Philosophy</title> <meta name="description" content="David A. NICOLAS is a CNRS researcher at Institut Jean Nicod..."> 
-    <link rel="canonical" href="https://davidnicolas.org/" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico"> 
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="canonical" href="https://davidnicolas.org/" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
+        /* CSS (Cascading Style Sheets) controls the LOOK of the website. 
+           We use classes (starts with .) and IDs (starts with #) to target elements.
+        */
+
         :root {
+            /* CSS VARIABLES: 
+               Think of these as "shortcuts". instead of remembering the color code #0e1b2a, 
+               we just use var(--col-navy). If you want to change the blue color across 
+               the whole site, you only change it here once!
+            */
             --col-navy: #0e1b2a; 
             --col-gold: #c5a065;   
             --col-teal: #3b8ea5;   
             --col-text: #222222;
-            --col-mute: #666666;
+            --col-mute: #666666; /* Muted text (grey) for less important info like dates */
             --bg-light: #f8f9fa;
             --bg-white: #ffffff;
             
-            --font-main: 'Inter', sans-serif;
-            --font-serif: 'Merriweather', serif;
+            --font-main: 'Inter', sans-serif;       /* Modern font for body text */
+            --font-serif: 'Merriweather', serif;    /* Classic font for headings */
 
             --section-spacing: 3rem; 
             --scale-content-recent: 0.75rem; 
@@ -26,37 +36,48 @@
             --size-buttons: 0.8rem; 
 
             --border: 1px solid #e0e0e0;
-            --shadow: 0 4px 6px rgba(0,0,0,0.05);
-            --shadow-h: 0 8px 15px rgba(0,0,0,0.1);
+            --shadow: 0 4px 6px rgba(0,0,0,0.05);   /* Subtle shadow for depth */
+            --shadow-h: 0 8px 15px rgba(0,0,0,0.1); /* Stronger shadow for hover effects */
         }
 
+        /* RESET: Browsers add their own default margins. This line removes them 
+           so we start with a clean slate. 'box-sizing: border-box' makes sizing elements 
+           easier by including padding in the width calculation.
+        */
         * { box-sizing: border-box; margin: 0; padding: 0; }
         
         body { 
             font-family: var(--font-main); 
             color: var(--col-text); 
-            line-height: 1.5; 
+            line-height: 1.5; /* Space between lines of text for readability */
             font-size: 15px; 
             background: var(--bg-white); 
             -webkit-text-size-adjust: 100%;
         }
 
+        /* TYPOGRAPHY: Styling the headings (h1 to h4) */
         h1, h2, h3, h4 { font-family: var(--font-serif); color: var(--col-navy); margin-bottom: 0.5em; }
         
+        /* LINKS: Styling clickable text */
         a { color: var(--col-teal); text-decoration: none; transition: color 0.2s; cursor: pointer; }
-        a:hover { color: var(--col-gold); }
+        a:hover { color: var(--col-gold); } /* The style changes when the mouse hovers over the link */
 
+        /* SECTIONS: The main blocks of content on the page */
         section { padding: var(--section-spacing) 8%; }
-        section + section { padding-top: 0; }
+        section + section { padding-top: 0; } /* If two sections are adjacent, remove top padding of the second one */
 
+        /* NAVIGATION BAR 
+           'position: sticky' makes the nav bar stick to the top of the screen when you scroll past it.
+           'display: flex' is a powerful layout tool that arranges items in a row or column.
+        */
         nav { 
             background: var(--col-navy); 
             padding: 0.8rem 2rem; 
             position: sticky; 
             top: 0; 
-            z-index: 1000;    
+            z-index: 1000; /* Ensures the nav bar sits ON TOP of everything else */   
             display: flex;    
-            justify-content: space-between; 
+            justify-content: space-between; /* Pushes brand to left and links to right */
             align-items: center; 
         }
         .nav-brand { color: var(--bg-white); font-family: var(--font-serif); font-size: 1.1rem; font-weight: 700; }
@@ -64,9 +85,11 @@
         .nav-links a { color: rgba(255,255,255,0.85); font-size: 0.9rem; }
         .nav-links a:hover { color: var(--bg-white); }
         
+        /* MOBILE MENU: Hidden by default (display: none), shown only on small screens via Media Queries below */
         .mobile-menu { display: none; gap: 1rem; }
         .mobile-menu a { color: rgba(255,255,255,0.85); font-size: 0.85rem; }
 
+        /* HERO SECTION: The top section with the photo */
         .hero { 
             display: flex; 
             align-items: center; 
@@ -87,6 +110,7 @@
             margin-bottom: 2.5rem; 
             position: relative; 
         }
+        /* The decorative gold line under section titles using a pseudo-element (::after) */
         .section-title::after { 
             content: ''; 
             display: block; 
@@ -96,6 +120,9 @@
             margin: 8px auto 0; 
         }
 
+        /* CSS GRID: Creates a 2-column layout for the "Recent" cards.
+           'repeat(2, 450px)' means create 2 columns, each 450px wide.
+        */
         .recent-grid { 
             display: grid; 
             grid-template-columns: repeat(2, 450px); 
@@ -113,6 +140,7 @@
             flex-direction: column; 
             min-height: 220px; 
         }
+        /* When hovering over a card, it moves up slightly (translateY -3px) */
         .card:hover { transform: translateY(-3px); box-shadow: var(--shadow-h); } 
         .card .year { font-size: 1.15rem; color: var(--col-gold); font-weight: 700; line-height: 1.2; }
         .card .title { 
@@ -128,17 +156,20 @@
         .card .actions { margin-top: auto; padding-top: 20px; display: flex; gap: 0.4rem; font-size: 0.75rem; flex-wrap: wrap; }
         .card .hidden-box { border-left: none; border-top: 2px solid var(--col-teal); background: #f4f4f4; margin-top: 15px; }
 
+        /* BIBLIOGRAPHY CONTROLS */
         .bib-controls { text-align: center; margin-bottom: 2rem; }
         .bib-toggle { cursor: pointer; padding: 0.4rem 1rem; border: var(--border); background: var(--bg-light); border-radius: 4px; margin: 0 5px; }
         .bib-toggle.active { background: var(--col-navy); color: var(--bg-white); border-color: var(--col-navy); }
         .cat-header { margin: 2rem 0 0.8rem 0; color: var(--col-navy); font-size: 1.1rem; border-bottom: 1px solid #ddd; padding-bottom: 0.3rem; }
         
+        /* ENTRIES: Used for rows in lists (Publications, Talks) */
         .entry { display: flex; margin-bottom: 0.8rem; font-size: 0.95rem; align-items: baseline; }
         .entry-year { flex: 0 0 60px; font-weight: 700; color: var(--col-navy); font-size: 0.9rem; }
         .entry-content { flex: 1; }
         .entry-title { font-weight: 600; color: var(--col-text); margin-right: 5px; }
         .entry-meta { font-style: italic; color: var(--col-mute); margin-right: 8px; font-size: 0.9rem; }
         
+        /* Text-only buttons used for DOI/Bibtex links. */
         .action-link { 
             color: var(--col-teal); 
             margin-right: 8px; 
@@ -153,7 +184,7 @@
         .action-link:hover { color: var(--col-gold); text-decoration: underline; }
         
         .hidden-box { 
-            display: none; 
+            display: none; /* Hidden by default, JavaScript toggles this to 'block' */
             margin-top: 0.4rem; 
             padding: 0.6rem; 
             background: var(--bg-light); 
@@ -163,6 +194,7 @@
         }
         .bibtex { font-family: 'Courier New', monospace; white-space: pre-wrap; color: #444; }
 
+        /* CV BOXES & SECTIONS */
         .cv-box { max-width: 900px; margin: 0 auto; background: var(--bg-white); padding: 2rem; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
         .cv-section { font-family: var(--font-serif); color: var(--col-navy); font-size: 1.3rem; border-bottom: 2px solid var(--col-gold); padding-bottom: 0.5rem; margin: 1.5rem 0 1rem 0; }
         .cv-item { display: flex; margin-bottom: 0.7rem; align-items: baseline; }
@@ -171,6 +203,7 @@
         .cv-detail span { font-style: italic; color: #666; font-size: 0.95rem; }
         .cv-detail { display: flex; flex-direction: column; }
 
+        /* The "Show More" button */
         .load-btn { 
             background: transparent; 
             border: 1px solid var(--col-navy); 
@@ -184,24 +217,88 @@
             transition: 0.2s; 
         }
         .load-btn:hover { background: var(--col-navy); color: var(--bg-white); }
-        .utility-hidden { display: none; }
+        .utility-hidden { display: none; } /* Utility class to hide elements */
 
         footer { background: var(--col-navy); color: var(--bg-white); padding: 2rem 8%; text-align: center; font-size: 0.9rem; }
         
+    /* MEDIA QUERIES (RESPONSIVENESS)
+       This block runs only if the screen width is 768px or less (Tablets and Phones).
+       We change layout from rows (horizontal) to columns (vertical) so it fits narrow screens.
+    */
     @media (max-width: 768px) {
-    body { font-size: 14px; overflow-x: hidden; }
-    section { padding: 2rem 5%; }
-    .hero { flex-direction: column !important; text-align: center; gap: 1rem; padding: 2rem 5%; }
-    .hero-img { order: -1 !important; } 
-    .hero-img img { width: 180px; height: auto; margin-bottom: 1rem; }
-    .hero h1 { font-size: 1.8rem; }
-    .recent-grid { grid-template-columns: 1fr !important; width: 100%; max-width: 100%; gap: 1.5rem; }
-    .card { width: 100%; min-height: auto; }
-    .cv-item { display: block !important; margin-bottom: 1.5em !important; }
-    .cv-date { display: block !important; width: 100% !important; margin-bottom: 0.3em !important; font-size: 0.85rem; font-weight: 600; color: var(--col-mute); line-height: 1.2; }
-    .cv-detail { display: block !important; }
-    .cv-detail strong { display: block !important; margin-bottom: 0.3em !important; line-height: 1.2; font-size: 1rem; }
-    .cv-detail span { display: block !important; line-height: 1.4; font-size: 0.95rem; }
+    body { 
+        font-size: 14px; 
+        overflow-x: hidden; 
+    }
+    section { 
+        padding: 2rem 5%; /* Less padding on mobile to save space */
+    }
+
+    /* Stack Hero section vertically instead of side-by-side */
+    .hero { 
+        flex-direction: column !important; 
+        text-align: center; 
+        gap: 1rem; 
+        padding: 2rem 5%;
+    }
+    .hero-img { 
+        order: -1 !important; /* Moves image to top */
+    } 
+    .hero-img img { 
+        width: 180px; 
+        height: auto; 
+        margin-bottom: 1rem; 
+    }
+    .hero h1 { 
+        font-size: 1.8rem; 
+    }
+
+    /* Change Grid to 1 column */
+    .recent-grid { 
+        grid-template-columns: 1fr !important; 
+        width: 100%; 
+        max-width: 100%; 
+        gap: 1.5rem; 
+    }
+    .card { 
+        width: 100%; 
+        min-height: auto; 
+    }
+
+    /* Stack CV items vertically */
+    .cv-item { 
+        display: block !important; 
+        margin-bottom: 1.5em !important; 
+    }
+    
+    .cv-date { 
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 0.3em !important; 
+        font-size: 0.85rem;
+        font-weight: 600; 
+        color: var(--col-mute); 
+        line-height: 1.2;
+    }
+
+    .cv-detail { 
+        display: block !important;
+    }
+
+    .cv-detail strong { 
+        display: block !important;
+        margin-bottom: 0.3em !important; 
+        line-height: 1.2;
+        font-size: 1rem;
+    }
+
+    .cv-detail span { 
+        display: block !important;
+        line-height: 1.4;
+        font-size: 0.95rem;
+    }
+
+    /* Hide desktop nav links, show mobile menu */
     .desktop-only { display: none !important; }
     .mobile-menu { display: flex; font-size: 0.8rem; }
 }
@@ -279,6 +376,9 @@
 
         <div class="cv-section">Teaching</div>
         <div id="cv-teaching"></div>
+
+        <div class="cv-section">Education</div>
+        <div id="cv-education"></div>
     </div>
 </section>
 
@@ -289,72 +389,97 @@
     <br>
     <p style="font-size: 0.8rem; opacity: 0.5;">&copy; 2025 David A. NICOLAS. <br>
     Website code, publications, and content rights reserved.
-    <!--- <a href="https://github.com/d-a-nicolas/d-a-nicolas.github.io" target="_blank" style="color: inherit; text-decoration: underline;">Website code</a>, publications, and content rights reserved. --->
     </p>
 </footer>
 
 <script>
+/* THE JAVASCRIPT SECTION: 
+   This is the "Brain" of the page. It reads data from text files, processes it, 
+   and generates the HTML to display it.
+   
+   We use a "Module Pattern" (const app = (() => { ... })();).
+   This creates a private scope so variables don't mess up other scripts on the page.
+*/
 const app = (() => {
     
+    // CONFIGURATION: Number of items to show before "Show More" appears.
     const pubsToShow = 10; 
 
+    // HELPERS: Functions that do small utility tasks.
+
+    // 1. cleanLatex: Converts academic LaTeX code (e.g., \textit{Word}) into HTML (<i>Word</i>).
+    // It uses "Regular Expressions" (regex) to find and replace patterns.
     const cleanLatex = (str) => {
         if (!str) return "";
         let s = str;
+        // Replace italics
         s = s.replace(/\\textit\{(.+?)\}/g, "<i>$1</i>");
+        // Replace French accents (e.g., \'e becomes é)
         s = s.replace(/\\'\{?e\}?/g, "é").replace(/\\`\{?e\}?/g, "è").replace(/\\\^\{?e\}?/g, "ê").replace(/\\"\{?e\}?/g, "ë"); 
         s = s.replace(/\\'\{?a\}?/g, "á").replace(/\\`\{?a\}?/g, "à").replace(/\\\^\{?a\}?/g, "â").replace(/\\"\{?a\}?/g, "ä");
         s = s.replace(/\\'\{?i\}?/g, "í").replace(/\\`\{?i\}?/g, "ì").replace(/\\\^\{?i\}?/g, "î").replace(/\\"\{?i\}?/g, "ï");
         s = s.replace(/\\'\{?o\}?/g, "ó").replace(/\\`\{?o\}?/g, "ò").replace(/\\\^\{?o\}?/g, "ô").replace(/\\"\{?o\}?/g, "ö");
         s = s.replace(/\\'\{?u\}?/g, "ú").replace(/\\`\{?u\}?/g, "ù").replace(/\\\^\{?u\}?/g, "û").replace(/\\"\{?u\}?/g, "ü");
         s = s.replace(/\\c\{?c\}?/g, "ç").replace(/\\'/g, ""); 
+        // Cleanup leftover brackets or commands
         s = s.replace(/[\{\}]/g, "").replace(/\\textnormal\s+/g, "").replace(/\\/g, ""); 
         return s.trim().replace(/\s+/g, ' ');
     };
 
-    // UPDATED: Dynamic author formatting logic
+    // 2. formatAuthors: Manages how author names are displayed.
     const formatAuthors = (authorStr) => {
         if (!authorStr) return "";
+        // Split the string by " and "
         const authors = authorStr.split(/\s+and\s+/);
+        // Keep only surnames (remove first names after comma)
         const surnames = authors.map(a => a.split(',')[0].trim());
         
-        // 1 Author: Hidden if it's just you
+        // Logic: Hide name if single author (assuming it is you).
         if (surnames.length === 1) {
             return (surnames[0].toLowerCase() === 'nicolas') ? "" : surnames[0];
         }
         
-        // 2 or 3 Authors: Show all (e.g., "S1 & S2" or "S1, S2 & S3")
+        // Logic: Show all authors if 3 or fewer.
         if (surnames.length <= 3) {
-            const last = surnames.pop();
+            const last = surnames.pop(); // Remove the last one to add "&" before it
             return `${surnames.join(', ')} & ${last}`;
         }
         
-        // 4+ Authors: et al. convention (e.g., "S1 et al.")
+        // Logic: Use "et al." if 4 or more authors.
         return `${surnames[0]} et al.`;
     };
 
+    // 3. parseBibtex: A complex function that reads raw .bib file text and creates a Javascript Object for each entry.
     const parseBibtex = (input) => {
         const entries = [];
-        input = input.replace(/\r\n/g, '\n');
+        input = input.replace(/\r\n/g, '\n'); // Normalize line breaks
         let pos = 0;
+        // Loop through the text finding '@' which starts a citation
         while (pos < input.length) {
             const atIndex = input.indexOf('@', pos);
             if (atIndex === -1) break;
             const openBrace = input.indexOf('{', atIndex);
             if (openBrace === -1) { pos = atIndex + 1; continue; }
-            const type = input.substring(atIndex + 1, openBrace).trim().toLowerCase();
+            const type = input.substring(atIndex + 1, openBrace).trim().toLowerCase(); // e.g., 'article'
+            
+            // Track brackets { } to find where the entry ends
             let depth = 1, current = openBrace + 1;
             while (current < input.length && depth > 0) {
                 if (input[current] === '{') depth++; else if (input[current] === '}') depth--;
                 current++;
             }
             if (depth > 0) { pos = current; continue; } 
+            
+            // Extract the content inside the braces
             const body = input.substring(openBrace + 1, current - 1);
             const firstComma = body.indexOf(',');
             if (firstComma === -1) { pos = current; continue; }
-            const key = body.substring(0, firstComma).trim();
+            const key = body.substring(0, firstComma).trim(); // Citation key
             const rawFields = body.substring(firstComma + 1);
+            
             const entry = { type, key };
+            
+            // Parse individual fields (title, author, year...)
             let fieldPos = 0;
             while (fieldPos < rawFields.length) {
                 const eqMatch = rawFields.substring(fieldPos).match(/([a-zA-Z0-9_\-]+)\s*=/);
@@ -363,6 +488,7 @@ const app = (() => {
                 let valStart = fieldPos + eqMatch.index + eqMatch[0].length;
                 while (valStart < rawFields.length && /\s/.test(rawFields[valStart])) valStart++;
                 let valEnd = valStart, value = "";
+                // Handle value enclosed in { } or " "
                 if (rawFields[valStart] === '{') {
                     let d = 1; valEnd = valStart + 1;
                     while (valEnd < rawFields.length && d > 0) {
@@ -383,6 +509,7 @@ const app = (() => {
                 const nextComma = rawFields.indexOf(',', valEnd);
                 fieldPos = (nextComma === -1) ? rawFields.length : nextComma + 1;
             }
+            // Sorting logic helper
             if (!entry.year && entry.date) entry.year = entry.date; 
             entry.yearInt = parseInt(entry.year) || 9999;
             if (String(entry.year).toLowerCase().includes('press')) entry.yearInt = 9999;
@@ -392,12 +519,15 @@ const app = (() => {
         return entries;
     };
 
+    // 4. parseGeneric: Used for simple text files (CV, Talks). It finds key={value} patterns.
     const parseGeneric = (text, fields) => {
         if (!text) return [];
+        // Dynamically create a regex based on the fields we want (e.g., date, title)
         const regexStr = fields.map(f => `${f}\\s*=\\s*\\{(.*?)\\}`).join('\\s*[,]?\\s*') + '[,]?\\s*\\}';
         const regex = new RegExp(regexStr, 'gs');
         const items = [];
         let match;
+        // Loop through all matches in the file
         while ((match = regex.exec(text)) !== null) {
             const item = {};
             fields.forEach((f, i) => item[f] = match[i + 1].trim());
@@ -406,9 +536,12 @@ const app = (() => {
         return items;
     };
 
+    // 5. renderPub: Generates the actual HTML string for a single publication.
     const renderPub = (e, viewType, prefix) => {
         const isCard = viewType === 'card';
-        const uid = prefix + '-' + e.key; 
+        const uid = prefix + '-' + e.key; // Unique ID for buttons
+        
+        // Add punctuation logic
         let title = e.title || "";
         if (isCard) {
             if (title.endsWith('.')) title = title.slice(0, -1);
@@ -422,6 +555,7 @@ const app = (() => {
         
         let meta = ""; 
 
+        // Build metadata string (Authors + Journal + Vol)
         if (authorContent) {
             meta += `<span style="font-style: normal;">${authorContent}</span>`;
         }
@@ -442,11 +576,13 @@ const app = (() => {
             meta += `<span style="font-style: normal;"> ${vol}</span>`;
         }
         
+        // Final punctuation check
         const plainMetaCheck = meta.replace(/<[^>]*>/g, '').trim();
         if (plainMetaCheck && !plainMetaCheck.endsWith('.')) {
             meta += `<span style="font-style: normal;">.</span>`;
         }
         
+        // Create interaction buttons (Bibtex, Abstract, PDF...)
         const btns = [];
         const absId = `abs-${uid}`;
         const bibId = `bib-${uid}`;
@@ -460,6 +596,8 @@ const app = (() => {
             if (f.toLowerCase().endsWith('.pdf')) f = f.substring(0, f.length - 4);
             btns.push(`<a href="pdf/${f}.pdf" target="_blank" class="action-link">[pdf]</a>`);
         }
+        
+        // Build BibTeX text block
         const ignored = ['key','type','yearInt','pdf','kind','abstract'];
         const bibBody = Object.keys(e).filter(k => !ignored.includes(k) && e[k]).map(k => `${k} = {${e[k]}}`).join(',\n');
         const bibText = `@${e.type}{${e.key},\n${bibBody}}`;
@@ -467,6 +605,8 @@ const app = (() => {
             <div id="${absId}" class="hidden-box abstract-text">${e.abstract || ''}</div>
             <div id="${bibId}" class="hidden-box"><pre class="bibtex">${bibText}</pre></div>
         `;
+        
+        // Return HTML based on view type (Card for recent, List for archives)
         if (isCard) {
             return `
             <div class="card">
@@ -490,24 +630,34 @@ const app = (() => {
         }
     };
 
+    // 6. renderList: Generic function to display lists (CV, Talks).
+    // It handles the logic for showing a limited number of items (limit) and adding a "Show More" button.
     const renderList = (id, items, tplFn, limit = 0) => {
         const container = document.getElementById(id);
         if(!container) return;
-        container.innerHTML = '';
+        container.innerHTML = ''; // Clear previous content
         if(!items.length) { container.innerHTML = '<p class="text-center text-mute">No entries found.</p>'; return; }
+        
+        // Slice the array: visible items vs hidden items
         const visible = items.slice(0, limit || items.length);
         const hidden = limit ? items.slice(limit) : [];
+        
+        // Insert visible items into the DOM
         visible.forEach(i => container.insertAdjacentHTML('beforeend', tplFn(i)));
+        
+        // If there are hidden items, create a hidden container and a Toggle button
         if (hidden.length) {
             const hidId = `${id}-hidden`;
             const hidDiv = document.createElement('div');
             hidDiv.id = hidId;
-            hidDiv.className = 'utility-hidden';
+            hidDiv.className = 'utility-hidden'; // Start hidden
             hidden.forEach(i => hidDiv.insertAdjacentHTML('beforeend', tplFn(i)));
             container.appendChild(hidDiv);
+            
             const btn = document.createElement('button');
             btn.className = 'load-btn';
             btn.textContent = 'Show More';
+            // Button click logic: Toggle display between 'block' and 'none'
             btn.onclick = () => {
                 const el = document.getElementById(hidId);
                 const isHidden = el.style.display !== 'block';
@@ -518,19 +668,24 @@ const app = (() => {
         }
     };
 
+    // 7. setupCollapsibleList: Handles collapsing long lists of publications.
     const setupCollapsibleList = (containerId, limit) => {
         const container = document.getElementById(containerId);
         if (!container) return;
         const entries = container.querySelectorAll('.entry');
         if (entries.length <= limit) return;
+        
         const btn = document.createElement('button');
         btn.className = 'load-btn';
         btn.innerText = 'Show More';
         let isExpanded = false;
+        
         const updateVisibility = () => {
             entries.forEach((entry, index) => {
+                // Show entry if it's within the limit OR if 'isExpanded' is true
                 entry.style.display = (isExpanded || index < limit) ? 'flex' : 'none';
             });
+            // Hide section headers (e.g., "Journals") if all their children are hidden
             const blocks = container.querySelectorAll('.category-block');
             blocks.forEach(block => {
                 const children = Array.from(block.querySelectorAll('.entry'));
@@ -544,16 +699,22 @@ const app = (() => {
         container.appendChild(btn);
     };
 
+    // 8. INIT: The main startup function. 'async' means it can wait for network requests.
     const init = async () => {
         try {
+            // Helper to fetch a file and return text, or null if it fails.
             const getTxt = async (f) => { try { const r = await fetch(f); return r.ok ? r.text() : null; } catch { return null; } };
             
-            const [cvEmp, cvProj, cvOrg, cvTeach, talksTxt, pubsTxt] = await Promise.all([
+            // Promise.all: Fetches ALL files at the same time (parallel) for speed.
+            // We use 'await' to pause execution until all files are downloaded.
+            const [cvEmp, cvProj, cvOrg, cvTeach, cvEdu, talksTxt, pubsTxt] = await Promise.all([
                 getTxt('cv_employment.txt'), getTxt('cv_projects.txt'),
                 getTxt('cv_organization.txt'), getTxt('cv_teaching.txt'),
+                getTxt('cv_education.txt'),
                 getTxt('talks.txt'), getTxt('publications.txt')
             ]);
             
+            // Template function for CV items
             const tplCV = (i) => {
                 const title = `<strong>${i.title}</strong>`;
                 const details = i.details.startsWith('<p') ? i.details : `<span>${i.details}</span>`;
@@ -561,22 +722,31 @@ const app = (() => {
             };
             const cvFields = ['date', 'title', 'details'];
             
+            // Fill CV Sections using our Generic Parser and Render functions
             renderList('cv-employment', parseGeneric(cvEmp, cvFields), tplCV);
             renderList('cv-projects', parseGeneric(cvProj, cvFields), tplCV);
-            renderList('cv-organization', parseGeneric(cvOrg, cvFields), tplCV, 5);
-            renderList('cv-teaching', parseGeneric(cvTeach, cvFields), tplCV, 5);
+            renderList('cv-organization', parseGeneric(cvOrg, cvFields), tplCV, 5); // Limit 5 initially
+            renderList('cv-teaching', parseGeneric(cvTeach, cvFields), tplCV, 5); // Limit 5 initially
+            renderList('cv-education', parseGeneric(cvEdu, cvFields), tplCV);
             
+            // Handle Talks
             if(talksTxt) {
                 const tplTalk = (i) => `<div class="entry"><div class="entry-year">${i.year}</div><div class="entry-content"><span class="entry-title">${i.title}</span><span class="entry-meta">${i.details}</span></div></div>`;
                 const t = parseGeneric(talksTxt, ['year', 'title', 'details']);
-                renderList('talks-container', t.slice(0, 10), tplTalk);
+                // Restricted behavior: We take top 10 from file (slice 0,10), but only show 5 by default.
+                // The "Show More" button will reveal the remaining 5.
+                renderList('talks-container', t.slice(0, 10), tplTalk, 5);
             }
             
+            // Handle Publications
             if (pubsTxt) {
                 const entries = parseBibtex(pubsTxt);
+                
+                // Recent: Sort by year, take top 4
                 const recent = [...entries].sort((a,b) => b.yearInt - a.yearInt).slice(0, 4);
                 document.getElementById('recent-container').innerHTML = recent.map(e => renderPub(e, 'card', 'recent')).join('');
                 
+                // Categories definition
                 const cats = [
                     { h: "Books and Special Issues", k: ["book", "special issue"], not: ["chapter", "review"] },
                     { h: "Journal Articles", k: ["article"] },
@@ -587,6 +757,7 @@ const app = (() => {
                     { h: "Manuscripts", k: ["unpublished", "manuscript", "working paper"] }
                 ];
                 
+                // Render Categorized View
                 const catContainer = document.getElementById('pub-categorized');
                 catContainer.innerHTML = '';
                 cats.forEach(c => {
@@ -602,15 +773,19 @@ const app = (() => {
                 });
                 setupCollapsibleList('pub-categorized', pubsToShow);
                 
+                // Render Chronological View
                 const chron = [...entries].sort((a,b) => b.yearInt - a.yearInt);
                 const chronContainer = document.getElementById('pub-chronological');
                 chronContainer.innerHTML = chron.map(e => renderPub(e, 'list', 'chron')).join('');
                 setupCollapsibleList('pub-chronological', pubsToShow);
+                
+                // Hide loading message
                 document.getElementById('pub-loading').style.display = 'none';
             }
         } catch (e) { console.error("Error init:", e); }
     };
 
+    // Public API: Expose specific functions so HTML buttons (onclick="app.toggle...") can reach them.
     return {
         init,
         toggleContent: (id) => {
@@ -627,6 +802,7 @@ const app = (() => {
     };
 })();
 
+// Trigger the 'init' function once the DOM (HTML structure) is fully loaded.
 document.addEventListener('DOMContentLoaded', app.init);
 </script>
 
