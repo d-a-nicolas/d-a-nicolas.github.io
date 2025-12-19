@@ -8,12 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
-        /* THE CSS SECTION:
-           For style and layout.
-        */
         :root {
-            /* 1. VARIABLES: Shortcuts for colors. Instead of typing the hex code '#0e1b2a' everywhere, we type '--col-navy'. 
-               If you change the color here once, it updates your entire website immediately. */
             --col-navy: #0e1b2a; 
             --col-gold: #c5a065;   
             --col-teal: #3b8ea5;   
@@ -35,7 +30,6 @@
             --shadow-h: 0 8px 15px rgba(0,0,0,0.1);
         }
 
-        /* 2. RESET: Removes default spacing browsers add so our layout remains predictable. */
         * { box-sizing: border-box; margin: 0; padding: 0; }
         
         body { 
@@ -47,16 +41,14 @@
             -webkit-text-size-adjust: 100%;
         }
 
-        /* Styling primary headings with the elegant Merriweather academic font. */
         h1, h2, h3, h4 { font-family: var(--font-serif); color: var(--col-navy); margin-bottom: 0.5em; }
         
         a { color: var(--col-teal); text-decoration: none; transition: color 0.2s; cursor: pointer; }
-        a:hover { color: var(--col-gold); } /* Changes color when the user hovers the mouse. */
+        a:hover { color: var(--col-gold); }
 
         section { padding: var(--section-spacing) 8%; }
         section + section { padding-top: 0; }
 
-        /* 3. NAVIGATION: 'sticky' keeps the menu fixed at the top while the visitor scrolls down. */
         nav { 
             background: var(--col-navy); 
             padding: 0.8rem 2rem; 
@@ -72,11 +64,9 @@
         .nav-links a { color: rgba(255,255,255,0.85); font-size: 0.9rem; }
         .nav-links a:hover { color: var(--bg-white); }
         
-        /* HIDDEN MENU: Only used on phones. */
         .mobile-menu { display: none; gap: 1rem; }
         .mobile-menu a { color: rgba(255,255,255,0.85); font-size: 0.85rem; }
 
-        /* 4. HERO: The intro section containing your summary and photo. */
         .hero { 
             display: flex; 
             align-items: center; 
@@ -97,7 +87,6 @@
             margin-bottom: 2.5rem; 
             position: relative; 
         }
-        /* The gold underline ornament under section headers. */
         .section-title::after { 
             content: ''; 
             display: block; 
@@ -107,7 +96,6 @@
             margin: 8px auto 0; 
         }
 
-        /* 5. GRID: Used for display cards. It builds columns to hold the content neatly. */
         .recent-grid { 
             display: grid; 
             grid-template-columns: repeat(2, 450px); 
@@ -140,20 +128,17 @@
         .card .actions { margin-top: auto; padding-top: 20px; display: flex; gap: 0.4rem; font-size: 0.75rem; flex-wrap: wrap; }
         .card .hidden-box { border-left: none; border-top: 2px solid var(--col-teal); background: #f4f4f4; margin-top: 15px; }
 
-        /* BIBLIOGRAPHY LISTS */
         .bib-controls { text-align: center; margin-bottom: 2rem; }
         .bib-toggle { cursor: pointer; padding: 0.4rem 1rem; border: var(--border); background: var(--bg-light); border-radius: 4px; margin: 0 5px; }
         .bib-toggle.active { background: var(--col-navy); color: var(--bg-white); border-color: var(--col-navy); }
         .cat-header { margin: 2rem 0 0.8rem 0; color: var(--col-navy); font-size: 1.1rem; border-bottom: 1px solid #ddd; padding-bottom: 0.3rem; }
         
-        /* 6. ENTRIES: Designing rows for Talks and Publications. */
         .entry { display: flex; margin-bottom: 0.8rem; font-size: 0.95rem; align-items: baseline; }
         .entry-year { flex: 0 0 60px; font-weight: 700; color: var(--col-navy); font-size: 0.9rem; }
         .entry-content { flex: 1; }
         .entry-title { font-weight: 600; color: var(--col-text); margin-right: 5px; }
         .entry-meta { font-style: italic; color: var(--col-mute); margin-right: 8px; font-size: 0.9rem; }
         
-        /* Text-only buttons used for DOI/Bibtex links. */
         .action-link { 
             color: var(--col-teal); 
             margin-right: 8px; 
@@ -178,7 +163,6 @@
         }
         .bibtex { font-family: 'Courier New', monospace; white-space: pre-wrap; color: #444; }
 
-        /* CV BOXES & SECTIONS */
         .cv-box { max-width: 900px; margin: 0 auto; background: var(--bg-white); padding: 2rem; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
         .cv-section { font-family: var(--font-serif); color: var(--col-navy); font-size: 1.3rem; border-bottom: 2px solid var(--col-gold); padding-bottom: 0.5rem; margin: 1.5rem 0 1rem 0; }
         .cv-item { display: flex; margin-bottom: 0.7rem; align-items: baseline; }
@@ -187,7 +171,6 @@
         .cv-detail span { font-style: italic; color: #666; font-size: 0.95rem; }
         .cv-detail { display: flex; flex-direction: column; }
 
-        /* The blue-bordered button that shows more hidden list items. */
         .load-btn { 
             background: transparent; 
             border: 1px solid var(--col-navy); 
@@ -205,83 +188,20 @@
 
         footer { background: var(--col-navy); color: var(--bg-white); padding: 2rem 8%; text-align: center; font-size: 0.9rem; }
         
-    /* 7. MEDIA QUERIES: Consolidated Mobile Fix */
     @media (max-width: 768px) {
-    body { 
-        font-size: 14px; 
-        overflow-x: hidden; /* Prevents horizontal scrolling on mobile */
-    }
-    section { 
-        padding: 2rem 5%; 
-    }
-
-    /* HOME: Vertical stack */
-    .hero { 
-        flex-direction: column !important; 
-        text-align: center; 
-        gap: 1rem; 
-        padding: 2rem 5%;
-    }
-    .hero-img { 
-        order: -1 !important; 
-    } 
-    .hero-img img { 
-        width: 180px; 
-        height: auto; 
-        margin-bottom: 1rem; 
-    }
-    .hero h1 { 
-        font-size: 1.8rem; 
-    }
-
-    /* RECENT: Single column grid */
-    .recent-grid { 
-        grid-template-columns: 1fr !important; 
-        width: 100%; 
-        max-width: 100%; 
-        gap: 1.5rem; 
-    }
-    .card { 
-        width: 100%; 
-        min-height: auto; 
-    }
-
-    /* CV: VERTICAL STACKING WITH NATURAL EM SPACING */
-    .cv-item { 
-        display: block !important; 
-        margin-bottom: 1.5em !important; /* Space between separate entries */
-        /* Overrides the desktop's 'align-items: baseline;' */
-    }
-    
-    .cv-date { 
-        display: block !important;
-        width: 100% !important;
-        margin-bottom: 0.3em !important; /* Space between Date and Title */
-        font-size: 0.85rem;
-        font-weight: 600; /* Matching desktop weight */
-        color: var(--col-mute); /* Matching desktop color */
-        line-height: 1.2;
-    }
-
-    .cv-detail { 
-        display: block !important;
-        /* Default margin is 0, keeping it tight to the title's margin-bottom */
-    }
-
-    .cv-detail strong { 
-        display: block !important;
-        margin-bottom: 0.3em !important; /* Space between Title and Details */
-        line-height: 1.2;
-        font-size: 1rem;
-    }
-
-    .cv-detail span { 
-        display: block !important;
-        line-height: 1.4;
-        font-size: 0.95rem;
-    }
-
-    /* Navigation */
+    body { font-size: 14px; overflow-x: hidden; }
+    section { padding: 2rem 5%; }
+    .hero { flex-direction: column !important; text-align: center; gap: 1rem; padding: 2rem 5%; }
+    .hero-img { order: -1 !important; } 
+    .hero-img img { width: 180px; height: auto; margin-bottom: 1rem; }
+    .hero h1 { font-size: 1.8rem; }
+    .recent-grid { grid-template-columns: 1fr !important; width: 100%; max-width: 100%; gap: 1.5rem; }
+    .card { width: 100%; min-height: auto; }
+    .cv-item { display: block !important; margin-bottom: 1.5em !important; }
+    .cv-date { display: block !important; width: 100% !important; margin-bottom: 0.3em !important; font-size: 0.85rem; font-weight: 600; color: var(--col-mute); line-height: 1.2; }
+    .cv-detail { display: block !important; }
+    .cv-detail strong { display: block !important; margin-bottom: 0.3em !important; line-height: 1.2; font-size: 1rem; }
+    .cv-detail span { display: block !important; line-height: 1.4; font-size: 0.95rem; }
     .desktop-only { display: none !important; }
     .mobile-menu { display: flex; font-size: 0.8rem; }
 }
@@ -368,26 +288,19 @@
     <p style="margin-top:10px;"><strong>Email:</strong> david.nicolas [at] ens [dot] psl [dot] eu</p>
     <br>
     <p style="font-size: 0.8rem; opacity: 0.5;">&copy; 2025 David A. NICOLAS. <br>
-    Website code, publications, and content rights reserved.
-    <!--- <a href="https://github.com/d-a-nicolas/d-a-nicolas.github.io" target="_blank" style="color: inherit; text-decoration: underline;">Website code</a>, publications, and content rights reserved. --->
+    <a href="https://github.com/d-a-nicolas/d-a-nicolas.github.io" target="_blank" style="color: inherit; text-decoration: underline;">Website code</a>, publications, and content rights reserved.
     </p>
 </footer>
 
 <script>
-/* THE JAVASCRIPT SECTION: 
-   The app reads information from external text files and builds the interface.
-*/
 const app = (() => {
     
-    // 1. CONFIGURATION: How many publications to show before the "Show More" button appears.
     const pubsToShow = 10; 
 
-    // 2. CLEANER ENGINE: Converts specialized LaTeX formatting (like \textit) into clean HTML (like <i>).
     const cleanLatex = (str) => {
         if (!str) return "";
         let s = str;
         s = s.replace(/\\textit\{(.+?)\}/g, "<i>$1</i>");
-        /* Standard replacements for French accents using RegEx code. */
         s = s.replace(/\\'\{?e\}?/g, "é").replace(/\\`\{?e\}?/g, "è").replace(/\\\^\{?e\}?/g, "ê").replace(/\\"\{?e\}?/g, "ë"); 
         s = s.replace(/\\'\{?a\}?/g, "á").replace(/\\`\{?a\}?/g, "à").replace(/\\\^\{?a\}?/g, "â").replace(/\\"\{?a\}?/g, "ä");
         s = s.replace(/\\'\{?i\}?/g, "í").replace(/\\`\{?i\}?/g, "ì").replace(/\\\^\{?i\}?/g, "î").replace(/\\"\{?i\}?/g, "ï");
@@ -398,17 +311,27 @@ const app = (() => {
         return s.trim().replace(/\s+/g, ' ');
     };
 
-    // 3. AUTHOR FORMATTER: Turns a long string of names into "Smith & Jones" or "Smith et al." for clean titles.
+    // UPDATED: Dynamic author formatting logic
     const formatAuthors = (authorStr) => {
         if (!authorStr) return "";
         const authors = authorStr.split(/\s+and\s+/);
         const surnames = authors.map(a => a.split(',')[0].trim());
-        if (surnames.length === 1) return (surnames[0].toLowerCase() === 'nicolas') ? "" : surnames[0];
-        if (surnames.length === 2) return `${surnames[0]} & ${surnames[1]}`;
-        return `${surnames[0]} et al.`; 
+        
+        // 1 Author: Hidden if it's just you
+        if (surnames.length === 1) {
+            return (surnames[0].toLowerCase() === 'nicolas') ? "" : surnames[0];
+        }
+        
+        // 2 or 3 Authors: Show all (e.g., "S1 & S2" or "S1, S2 & S3")
+        if (surnames.length <= 3) {
+            const last = surnames.pop();
+            return `${surnames.join(', ')} & ${last}`;
+        }
+        
+        // 4+ Authors: et al. convention (e.g., "S1 et al.")
+        return `${surnames[0]} et al.`;
     };
 
-    // 4. BIBTEX PARSER: The complex logic that breaks down academic .bib records into clean logic objects.
     const parseBibtex = (input) => {
         const entries = [];
         input = input.replace(/\r\n/g, '\n');
@@ -468,7 +391,6 @@ const app = (() => {
         return entries;
     };
 
-    // 5. GENERIC PARSER: Extracts basic text blocks (key={value}) for CV items and talks.
     const parseGeneric = (text, fields) => {
         if (!text) return [];
         const regexStr = fields.map(f => `${f}\\s*=\\s*\\{(.*?)\\}`).join('\\s*[,]?\\s*') + '[,]?\\s*\\}';
@@ -483,7 +405,6 @@ const app = (() => {
         return items;
     };
 
-    // 6. PUB RENDERER: Turns a data item into visual HTML code for a bibliography row.
     const renderPub = (e, viewType, prefix) => {
         const isCard = viewType === 'card';
         const uid = prefix + '-' + e.key; 
@@ -495,52 +416,35 @@ const app = (() => {
             title = title + (hasPunctuation ? '' : '.');
         }
         
-        // --- MODIFIED SECTION START ---
-        
-        // 1. Get author (plain text content) and container (journal/book/etc.)
         const authorContent = e.author ? formatAuthors(e.author) : (e.editor ? formatAuthors(e.editor) : "");
         const containerContent = e.journal || e.booktitle || "";
         
-        let meta = ""; // This is the string that goes into ${meta}
+        let meta = ""; 
 
         if (authorContent) {
-            // Author is always plain text. We use an inline style to force 'font-style: normal' 
-            // for the list view, overriding the parent's italic style (class .entry-meta).
             meta += `<span style="font-style: normal;">${authorContent}</span>`;
         }
         
         if (containerContent) {
-            // Add a plain-text separator if author exists.
             if (meta) {
-                // Determine separator logic: if author text ends with punctuation, use a space, otherwise use a period and space.
                 const authorText = authorContent.trim();
                 const needsPeriod = !/[?!.]$/.test(authorText);
                 const separator = needsPeriod ? '. ' : ' '; 
-                
-                // The separator must also be forced to plain text.
                 meta += `<span style="font-style: normal;">${separator}</span>`;
             }
-            
-            // Container text: wrapped in <i> for italics, as requested.
             meta += `<i>${containerContent}</i>`;
         }
 
-        // 2. Add volume/number information (must also be in plain text)
         if (e.volume) {
             let vol = e.volume;
             if (e.number) vol += `(${e.number})`;
-            // Volume/number is also forced to plain text.
             meta += `<span style="font-style: normal;"> ${vol}</span>`;
         }
         
-        // 3. Final punctuation cleanup. (Must be in plain text).
-        // Get the last visible character of `meta` by stripping HTML and checking.
         const plainMetaCheck = meta.replace(/<[^>]*>/g, '').trim();
         if (plainMetaCheck && !plainMetaCheck.endsWith('.')) {
             meta += `<span style="font-style: normal;">.</span>`;
         }
-        
-        // --- MODIFIED SECTION END ---
         
         const btns = [];
         const absId = `abs-${uid}`;
@@ -585,7 +489,6 @@ const app = (() => {
         }
     };
 
-    // 7. LIST RENDERER: Helper function to map data arrays onto the HTML page.
     const renderList = (id, items, tplFn, limit = 0) => {
         const container = document.getElementById(id);
         if(!container) return;
@@ -614,7 +517,6 @@ const app = (() => {
         }
     };
 
-    // 8. COLLAPSIBLE TOOL: Attaches logic to list sections so long text files don't clutter the page initially.
     const setupCollapsibleList = (containerId, limit) => {
         const container = document.getElementById(containerId);
         if (!container) return;
@@ -641,13 +543,10 @@ const app = (() => {
         container.appendChild(btn);
     };
 
-    // 9. INITIALIZATION (INIT): The main trigger function. It runs immediately when the page finishes loading.
     const init = async () => {
         try {
-            // 10. FETCHER: Asks your server for the external text files and returns their content as raw text.
             const getTxt = async (f) => { try { const r = await fetch(f); return r.ok ? r.text() : null; } catch { return null; } };
             
-            // Runs all text file requests simultaneously for maximum speed.
             const [cvEmp, cvProj, cvOrg, cvTeach, talksTxt, pubsTxt] = await Promise.all([
                 getTxt('cv_employment.txt'), getTxt('cv_projects.txt'),
                 getTxt('cv_organization.txt'), getTxt('cv_teaching.txt'),
@@ -661,20 +560,17 @@ const app = (() => {
             };
             const cvFields = ['date', 'title', 'details'];
             
-            // FILL CV DATA
             renderList('cv-employment', parseGeneric(cvEmp, cvFields), tplCV);
             renderList('cv-projects', parseGeneric(cvProj, cvFields), tplCV);
             renderList('cv-organization', parseGeneric(cvOrg, cvFields), tplCV, 5);
             renderList('cv-teaching', parseGeneric(cvTeach, cvFields), tplCV, 5);
             
-            // FILL TALKS DATA
             if(talksTxt) {
                 const tplTalk = (i) => `<div class="entry"><div class="entry-year">${i.year}</div><div class="entry-content"><span class="entry-title">${i.title}</span><span class="entry-meta">${i.details}</span></div></div>`;
                 const t = parseGeneric(talksTxt, ['year', 'title', 'details']);
                 renderList('talks-container', t.slice(0, 10), tplTalk);
             }
             
-            // FILL PUBLICATIONS DATA
             if (pubsTxt) {
                 const entries = parseBibtex(pubsTxt);
                 const recent = [...entries].sort((a,b) => b.yearInt - a.yearInt).slice(0, 4);
@@ -705,7 +601,6 @@ const app = (() => {
                 });
                 setupCollapsibleList('pub-categorized', pubsToShow);
                 
-                // SETUP CHRONOLOGICAL SORTING
                 const chron = [...entries].sort((a,b) => b.yearInt - a.yearInt);
                 const chronContainer = document.getElementById('pub-chronological');
                 chronContainer.innerHTML = chron.map(e => renderPub(e, 'list', 'chron')).join('');
@@ -715,7 +610,6 @@ const app = (() => {
         } catch (e) { console.error("Error init:", e); }
     };
 
-    // PUBLIC EXPORTS: Allows interaction buttons (HTML) to trigger these JavaScript actions.
     return {
         init,
         toggleContent: (id) => {
@@ -732,7 +626,6 @@ const app = (() => {
     };
 })();
 
-// Wait for the skeleton (HTML) to finish before the Brain (JavaScript) starts.
 document.addEventListener('DOMContentLoaded', app.init);
 </script>
 

@@ -135,7 +135,7 @@ pdf = {Florio-Nicolas-Plurals-and-mereology},
 }
 
 @article{JustoEtAl2003,
-author = {Justo, Damian and Nicolas, David and Pacherie, Elisabeth},
+author = {Justo, Damián and Dutant, Julien and Hardy-Vallée, Benoît and Nicolas, David and Sylvand, Benjamin Q.},
 title = {Delegation, Subdivision, and Modularity: {H}ow Rich Is Conceptual Structure?},
 year = {2003},
 journal = {Behavioral and Brain Sciences},
