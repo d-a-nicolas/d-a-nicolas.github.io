@@ -14,7 +14,7 @@ The PDF files in the `pdf/` folder are scientific publications and are provided 
 
 This website is fully dynamic. Content is not hard-coded in HTML but fetched from the following text files:
 
-* **CV Sections:** `cv_employment.txt`, `cv_projects.txt`, `cv_organization.txt`, `cv_teaching.txt`
+* **CV Sections:** `cv_employment.txt`, `cv_projects.txt`, `cv_organization.txt`, `cv_teaching.txt`, `education.txt`
 * **Research:** `publications.txt` (BibTeX), `talks.txt`
 * **PDFs:** PDFs of publications are located in the `pdf/` folder.
 
