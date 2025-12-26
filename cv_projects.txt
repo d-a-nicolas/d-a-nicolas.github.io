@@ -1,5 +1,5 @@
 {date = {2017},
-title = {Plurals and mereology},
+title = {Plurals and Mereology},
 details = {IAS University of Birmingham project}
 }
 
