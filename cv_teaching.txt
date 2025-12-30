@@ -1,49 +1,49 @@
 {date = {Since 2022},
-title = {Natural language ontology: sums, events, and degrees},
+title = {Natural Language Ontology: Sums, Events, and Degrees},
 details = {ENS, France (with Jeremy Kuhn)}
 }
 
 {date = {2020–2021},
-title = {Counting and measuring across languages and domains},
+title = {Counting and Measuring across Languages and Domains},
 details = {ENS, France (with Jeremy Kuhn)}
 }
 
 {date = {2016–2019},
-title = {Master's course in natural language semantics},
+title = {Master's Course in Natural Language Semantics},
 details = {EHESS, France (with Alda Mari)}
 }
 
 {date = {July 2017},
-title = {Speaking of things and stuff},
+title = {Speaking of Things and Stuff},
 details = {ESSLLI 2017, France (with Salvatore Florio)}
 }
 
 {date = {2009–2015},
-title = {Master's course in natural language semantics},
+title = {Master's Course in Natural Language Semantics},
 details = {Paris 4 University, France (with Patrick Caudal & Alda Mari)}
 }
 
 {date = {April 2008},
-title = {The semantics of plurals and mass nouns},
+title = {The Semantics of Plurals and Mass Terms},
 details = {Journées de Sémantique et Modélisation 2008, France}
 }
 
 {date = {March 2006},
-title = {The semantics of plurals},
+title = {The Semantics of Plurals},
 details = {Journées de Sémantique et Modélisation 2006, France}
 }
 
 {date = {2000–2001},
-title = {Introduction to the morphology and history of English / Study of language},
+title = {Introduction to the Morphology and History of English, Introduction to the Study of Language},
 details = {UCLA, USA}
 }
 
 {date = {1999–2000},
-title = {Introductory courses to phonology, morphology, syntax and semantics},
+title = {Introduction to Phonology, Morphology, Syntax and Semantics},
 details = {University of Valenciennes, France}
 }
 
 {date = {1994–1997},
-title = {Teaching Assistant},
-details = {McGill University, Canada <p style="font-size: 0.85rem; color: #666; margin-top: 2px;">History of psychology, Modern psychological theories, Psychology of perception, Psychology of deafness</p>}
+title = {History of Psychology, Modern Psychological Theories, Psychology of Perception, Psychology of Deafness},
+details = {McGill University, Canada, Teaching Assistant}
 }
