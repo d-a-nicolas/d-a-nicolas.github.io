@@ -20,5 +20,5 @@ details = {Participation to ANR project}
 
 {date = {2002–2010},
 title = {Sémantique & Modélisation (GDR 2521)},
-details = {Co-organization of research group with Francis Corblin}
+details = {Co-organization of research group (with Francis Corblin)}
 }
