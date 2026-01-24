@@ -445,7 +445,7 @@ edition = {Spring 2024 edition},
 publisher = {Metaphysics Research Lab, Stanford University},
 address = {Stanford},
 url = {https://plato.stanford.edu/archives/spr2024/entries/logic-massexpress/},
-abstract = {In many languages, like English, nominal expressions headed by common nouns can be divided into two subtypes, mass expressions (like 'wine', 'silverware', 'wisdom') and count expressions (like 'cat', 'army', 'idea'). We first characterize what mass expressions are. Then we discuss various proposals concerning their semantics.},
+abstract = {In many languages, like English, nominal expressions headed by common nouns can be divided into two subtypes, mass expressions (like 'wine', 'silverware', 'wisdom') and count expressions (like 'cat', 'army', 'idea'). We first characterize what mass expressions are. Then we discuss various proposals concerning their semantics and their logic.},
 type = {encyclopedia entry},
 pdf = {Nicolas-The-logic-of-mass-expressions},
 }
