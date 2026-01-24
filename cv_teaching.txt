@@ -4,7 +4,7 @@ details = {ENS, France (with Jeremy Kuhn)}
 }
 
 {date = {2020–2021},
-title = {Counting and Measuring across Languages and Domains},
+title = {Counting and Measuring Across Languages and Domains},
 details = {ENS, France (with Jeremy Kuhn)}
 }
 
