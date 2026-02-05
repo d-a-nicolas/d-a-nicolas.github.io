@@ -1,21 +1,21 @@
 {date = {2017},
 title = {Plurals and Mereology},
-details = {IAS University of Birmingham project}
+details = {IAS University of Birmingham project (with Salvatore Florio)}
 }
 
 {date = {2010–2015},
 title = {Determiners and Inferences},
-details = {Participation to IUF project}
+details = {Participation in IUF project}
 }
 
 {date = {2008–2011},
 title = {Genericity, Interpretation and Uses},
-details = {Participation to ANR project}
+details = {Participation in ANR project}
 }
 
 {date = {2008–2011},
 title = {Cognitive Origins of Vagueness},
-details = {Participation to ANR project}
+details = {Participation in ANR project}
 }
 
 {date = {2002–2010},
