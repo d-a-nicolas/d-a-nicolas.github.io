@@ -71,12 +71,14 @@ pdf = {Caudal-Nicolas-Degrees-and-events},
 }
 
 @book{CorblinNicolas2016a,
-title = {D\'{e}terminants et Inf\'{e}rences. Special Issue of '{T}ravaux de Linguistique'},
+title = {D\'{e}terminants et Inf\'{e}rences (Special Issue)},
 year = {2016},
 editor = {Corblin, Francis and Nicolas, David},
-publisher = {De Boeck},
+journal = {Travaux de Linguistique},
 volume = {72},
+number = {1},
 abstract = {},
+url = {https://shs.cairn.info/revue-travaux-de-linguistique-2016-1},
 pdf = {},
 }
 

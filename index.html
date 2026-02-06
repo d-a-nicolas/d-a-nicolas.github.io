@@ -550,8 +550,19 @@ const app = (() => {
             title = title + (hasPunctuation ? '' : '.');
         }
         
-        const authorContent = e.author ? formatAuthors(e.author) : (e.editor ? formatAuthors(e.editor) : "");
-        const containerContent = e.journal || e.booktitle || "";
+        // const authorContent = e.author ? formatAuthors(e.author) : (e.editor ? formatAuthors(e.editor) : "");
+        // const containerContent = e.journal || e.booktitle || "";
+
+        // 1. Updated author logic: Removed the editor fallback 
+        // (If there's no author, it stays empty instead of showing the editor)
+        const authorContent = e.author ? formatAuthors(e.author) : "";
+
+        // 2. Updated container logic: Appends the publisher if it's a book
+        let containerContent = e.journal || e.booktitle || "";
+        if (e.publisher) {
+         // Adds a comma and space if there's already a journal/booktitle
+        containerContent += (containerContent ? `, ${e.publisher}` : e.publisher);
+        }
         
         let meta = ""; 
 
