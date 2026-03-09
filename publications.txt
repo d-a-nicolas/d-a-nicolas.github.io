@@ -105,6 +105,7 @@ booktitle = {L'\'{e}pist\'{e}mologie Sociale. {U}ne Th\'{e}orie Sociale de la Co
 pages = {139--162},
 address = {Paris, France},
 publisher = {Editions de l'EHESS},
+doi = {10.4000/books.editionsehess.11311},
 isbn = {9782713221149},
 abstract = {Our aim in this paper is to clarify the distinctions and the relationships among several phenomena, each of which has certain characteristics of what is generally called deference. We distinguish linguistic deference, which concerns the use of language and the meaning of the words we use, from epistemic deference, which concerns our reasons and evidence for making the claims we make. In our in-depth study of linguistic deference, we distinguish two subcategories: default deference, and deliberate deference. We also discuss the phenomenon of im-perfect mastery, often associated with deference, and which we show to be independent both of linguistic deference and of epistemic deference. If our analysis is correct, then some recent debates on deference can be shown to result from a failure to appreciate all the distinctions that we draw here.},
 pdf = {Brabanter-et-al-Les-usages-deferentiels},
