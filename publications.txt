@@ -171,9 +171,9 @@ journal = {Revue de S\'{e}mantique et Pragmatique},
 volume = {14},
 pages = {157--168},
 abstract = {L'objet de cet article est d'examiner en quoi la phrase nominale existentielle :
-(a) "Lecture pendant toute la matinée"
-(b) "Lecture d'un poème"
-(c) "Lecture"
+(a) Lecture pendant toute la matinée
+(b) Lecture d'un poème
+(c) Lecture
 peut être concernée par la distinction aspectuelle télique / atélique. Nous avons examiné les phrases qui, notamment à cause du type d'expression nominale employé, renvoient à un événement, un processus ou un état. Celles qui renvoient à un événement sont téliques, les autres sont atéliques, comme dans le cas des expressions verbales. Nous avons étudié les énoncés nominaux qui comportent un circonstant (a) pouvant influer sur l'aspect télique ou atélique de l'énoncé et les énoncés qui renferment uniquement un groupe nominal, comme en (b), ou un simple nom comme en (c). Il ressort de cette étude i) que le caractère télique ou atélique d'une phrase nominale existentielle dépend non seulement du type de nom utilisé, mais aussi de facteurs syntaxiques (circonstant, complément, adjectif et déterminant du nom) voire contextuels (l'énoncé précédent); ii) que la phrase nominale existentielle impose certaines contraintes d'emploi, notamment par rapport aux déterminants, ce qui peut freiner l'observation de la télicité pour certains groupes nominaux.},
 pdf = {Lefeuvre-Nicolas-Telicite},
 }
@@ -248,7 +248,7 @@ journal = {Revue de la Lexicologie},
 year = {2004},
 volume = {18-19},
 pages = {125--138},
-abstract = {In English, some common nouns, like "cat", can be used in the singular and in the plural, while others, like 'water', are invariable. Moreover, nouns like "cat" can be employed with numerals like 'one' and 'two' and determiners like 'a', 'many' and 'few', but neither with 'much' nor 'little'. On the contrary, nouns like 'milk' can be used with determiners like 'much' and 'little', but neither with 'a', 'one' nor 'many'. These two types of nouns constitute two morphosyntactic sub-classes of English common nouns; cf. for instance Gillon (1992). They have been respectively called count nouns and mass nouns. In many languages, notably Romance and Germanic languages, one can similarly identify two morphosyntactic subclasses of common nouns, nouns of one class admitting singular and plural number, and nouns of the other being invariable in grammatical number. The question we want to address in this paper is one in lexical semantics: Is there anything characteristic about the meaning of a count noun?},
+abstract = {In English, some common nouns, like 'cat', can be used in the singular and in the plural, while others, like 'water', are invariable. Moreover, nouns like 'cat' can be employed with numerals like 'one' and 'two' and determiners like 'a', 'many' and 'few', but neither with 'much' nor 'little'. On the contrary, nouns like 'milk' can be used with determiners like 'much' and 'little', but neither with 'a', 'one' nor 'many'. These two types of nouns constitute two morphosyntactic sub-classes of English common nouns; cf. for instance Gillon (1992). They have been respectively called count nouns and mass nouns. In many languages, notably Romance and Germanic languages, one can similarly identify two morphosyntactic subclasses of common nouns, nouns of one class admitting singular and plural number, and nouns of the other being invariable in grammatical number. The question we want to address in this paper is one in lexical semantics: Is there anything characteristic about the meaning of a count noun?},
 pdf = {Nicolas-Count-nouns},
 }
 
