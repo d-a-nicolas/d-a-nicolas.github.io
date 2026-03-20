@@ -581,10 +581,22 @@ const app = (() => {
             meta += `<i>${containerContent}</i>`;
         }
 
+        // Former logic for displaying volume(number)
+        // if (e.volume) {
+        //    let vol = e.volume;
+        //    if (e.number) vol += `(${e.number})`;
+        //    meta += `<span style="font-style: normal;"> ${vol}</span>`;
+        // }
+
+        // New logic for displaying volume(eid) if number is empty
         if (e.volume) {
-            let vol = e.volume;
-            if (e.number) vol += `(${e.number})`;
-            meta += `<span style="font-style: normal;"> ${vol}</span>`;
+        let vol = e.volume;
+        // Check if number exists; if not, use eid if available
+        const subIdentifier = e.number || e.eid; 
+        if (subIdentifier) {
+        vol += `(${subIdentifier})`;
+        }
+        meta += `<span style="font-style: normal;"> ${vol}</span>`;
         }
         
         // Final punctuation check
