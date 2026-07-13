@@ -1,5 +1,5 @@
 {year = {2026},
-title = {Partitives, Wholes and Groups.},
+title = {Partitives, Groups and Wholes.},
 details = {Joint Session of the Aristotelian Society and the Mind Association, Reading, UK.}
 }
 
