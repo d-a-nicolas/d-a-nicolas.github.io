@@ -1,3 +1,13 @@
+{year = {2026},
+title = {Partitives, Wholes and Groups.},
+details = {Joint Session of the Aristotelian Society and the Mind Association, Reading, UK.}
+}
+
+{year = {2026},
+title = {Covert reciprocals.},
+details = {Poster, Conference RALPHe, Paris, France.}
+}
+
 {year = {2023},
 title = {Collective Nouns and the Distribution Problem.},
 details = {Bilkent University, Ankara, Turkey.}
@@ -10,7 +20,7 @@ details = {University of Utrecht, Netherlands.}
 
 {year = {2019},
 title = {The Unexplained Symmetric Reading of Reciprocal Sentences.},
-details = {Poster at workshop on Reciprocals, University of Utrecht.}
+details = {Poster, Workshop on Reciprocals, University of Utrecht.}
 }
 
 {year = {2019},
