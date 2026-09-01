@@ -15,7 +15,7 @@ pdf = {Bale-Nicolas-Counting-individuals-and-their-halves},
 }
 
 @inproceedings{Bourgeois-GirondeEtAl2019,
-author = {Bourgeois-Gironde, Sacha and Mari, Alda and Nicolas, David and Blumier, David},
+author = {Bourgeois-Gironde, Sacha and Mari, Alda and Nicolas, David and Blunier, David},
 title = {Grammatical Mood and Ambiguity Aversion},
 year = {2019},
 booktitle = {Proceedings of the 10th International Conference of Experimental Linguistics},
