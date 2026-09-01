@@ -35,7 +35,7 @@ details = {Arché, University of St Andrews, UK.}
 
 {year = {2018},
 title = {Pluriels et Méréologie.},
-details = {Institut Henri Poincaré, Nancy, France.}
+details = {Archives Henri Poincaré, Nancy, France.}
 }
 
 {year = {2018},
