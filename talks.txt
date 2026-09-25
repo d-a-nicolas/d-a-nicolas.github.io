@@ -15,7 +15,7 @@ details = {Joint Session of the Aristotelian Society and the Mind Association, R
 
 {year = {2026},
 title = {Covert Reciprocals.},
-details = {Poster, Conference RALPHe, Paris, France.}
+details = {Poster, Conference RALPFe, Paris, France.}
 }
 
 {year = {2023},
