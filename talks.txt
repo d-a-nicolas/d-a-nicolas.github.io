@@ -1,5 +1,15 @@
 {year = {2026},
-title = {Partitives, Groups and Wholes.},
+title = {Covert Reciprocals as Omissible Complements.},
+details = {Workshop on the Syntax and Semantics of Implicit Arguments, University of Graz, Austria.}
+}
+
+{year = {2026},
+title = {Mass Nouns and Plural Logic Revisited.},
+details = {University of Oslo, Norway.}
+}
+
+{year = {2026},
+title = {Partitives, Groups, and Wholes.},
 details = {Joint Session of the Aristotelian Society and the Mind Association, Reading, UK.}
 }
 
