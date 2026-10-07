@@ -483,10 +483,10 @@ abstract = {Intuitively, collective nouns are pseudo-singular: a collection of t
 pdf = {Nicolas-Payton-Collective-nouns-and-the-distribution-problem},
 }
 
-@article{NicolasPaytonInpress,
+@article{NicolasPayton2025,
 author = {Nicolas, David and Payton, Jonathan},
 title = {Superplurals Analyzed Away},
-year = {In press},
+year = {2025},
 journal = {Inquiry},
 volume = {},
 number = {},
@@ -494,4 +494,17 @@ pages = {},
 doi = {10.1080/0020174X.2024.2440765},
 abstract = {Many natural languages include plural terms, i.e. terms which denote many individuals at once. Are there also superplural terms, i.e. terms which denote many pluralities of individuals at once? Some philosophers say ‘Yes’, citing a range of sentence types which apparently can't be analyzed in a first-order plural logic, but which can be analyzed in a superplural one. We argue that all the data presented in favor of the superplural can, in fact, be analyzed using only first-order resources. The key is to add to ordinary plural logic a new notion of a generalized cover. A generalized cover reflects how interlocutors in a conversation may divide a salient plurality into many subpluralities, which can then be involved in reference and predication. With generalized covers in place, all the apparently troublesome sentences can be easily handled. Our approach can also be extended to account, not only for linguistic data which seem to favor the superplural but also for other phenomena involving plurals. The result is a unified approach to natural language plurals on which superplurals are analyzed away.},
 pdf = {Nicolas-Payton-Superplurals-analyzed-away},
+}
+
+@article{NicolasPayton2026,
+author = {Nicolas, David and Payton, Jonathan D},
+title = {Partitives, Groups, and Wholes},
+year = {2026},
+journal = {The Philosophical Quarterly},
+volume = {},
+number = {},
+pages = {},
+doi = {10.1093/pq/pqag070},
+abstract = {There’s an attractive view in social ontology on which a group is identical to its members. It has its defenders, but seems felled by a simple objection resting on plausible assumptions about the semantics of plural partitives—assumptions built into standard plural logic. We argue the assumptions are false: whether something counts as ‘one of’ a plurality turns on how that plurality is carved up, a sensitivity the standard regimentation misses. We propose and defend a cover-based semantics that captures it, blocks the objection, and earns its keep on independent grounds. The same account answers a parallel, well-known objection to composition as identity. Our view thus bears both on the logic and meaning of plurals and on debates in metaphysics.},
+pdf = {Nicolas-Payton-Partitives,-groups,-and-wholes},
 }
