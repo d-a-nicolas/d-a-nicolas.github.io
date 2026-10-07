@@ -30,7 +30,7 @@ details = {University of Utrecht, Netherlands.}
 
 {year = {2019},
 title = {The Unexplained Symmetric Reading of Reciprocal Sentences.},
-details = {Poster, Workshop on Reciprocals, University of Utrecht.}
+details = {Poster, Workshop on Reciprocals, University of Utrecht, Netherlands.}
 }
 
 {year = {2019},
