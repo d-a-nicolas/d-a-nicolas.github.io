@@ -483,10 +483,10 @@ abstract = {Intuitively, collective nouns are pseudo-singular: a collection of t
 pdf = {Nicolas-Payton-Collective-nouns-and-the-distribution-problem},
 }
 
-@article{NicolasPayton2025,
+@article{NicolasPaytonInPress,
 author = {Nicolas, David and Payton, Jonathan},
 title = {Superplurals Analyzed Away},
-year = {2025},
+year = {In Press},
 journal = {Inquiry},
 volume = {},
 number = {},
@@ -496,10 +496,10 @@ abstract = {Many natural languages include plural terms, i.e. terms which denote
 pdf = {Nicolas-Payton-Superplurals-analyzed-away},
 }
 
-@article{NicolasPayton2026,
+@article{NicolasPaytonInPress,
 author = {Nicolas, David and Payton, Jonathan D},
 title = {Partitives, Groups, and Wholes},
-year = {2026},
+year = {In Press},
 journal = {The Philosophical Quarterly},
 volume = {},
 number = {},
