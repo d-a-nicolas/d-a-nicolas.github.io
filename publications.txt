@@ -45,15 +45,7 @@ volume = {29},
 number = {4},
 pages = {509--525},
 doi = {10.1007/s11050-021-09179-x},
-abstract = {A number of natural language constructions seem to provide access to structured pluralities—
-that is, pluralities of pluralities. A body of semantic work has debated how
-to model this additional structure and the extent to which it depends on pragmatics.
-In this article, after controlling for the distinction between ambiguity and underspecification,
-we present new data showing that structured pluralities are sometimes but
-not always available, depending on the form of the plural noun phrase used.We show
-that these results challenge two longstanding theories of plurality.We sketch two different
-ways to account for these data and describe some of the diverging predictions
-they make.},
+abstract = {A number of natural language constructions seem to provide access to structured pluralities—that is, pluralities of pluralities. A body of semantic work has debated how to model this additional structure and the extent to which it depends on pragmatics. In this article, after controlling for the distinction between ambiguity and underspecification, we present new data showing that structured pluralities are sometimes but not always available, depending on the form of the plural noun phrase used. We show that these results challenge two longstanding theories of plurality. We sketch two different ways to account for these data and describe some of the diverging predictions they make.},
 pdf = {Buccola-Kuhn-Nicolas-Groups-versus-covers-revisited},
 }
 
@@ -106,7 +98,7 @@ pages = {139--162},
 address = {Paris, France},
 publisher = {Editions de l'EHESS},
 doi = {10.4000/books.editionsehess.11311},
-abstract = {Our aim in this paper is to clarify the distinctions and the relationships among several phenomena, each of which has certain characteristics of what is generally called deference. We distinguish linguistic deference, which concerns the use of language and the meaning of the words we use, from epistemic deference, which concerns our reasons and evidence for making the claims we make. In our in-depth study of linguistic deference, we distinguish two subcategories: default deference, and deliberate deference. We also discuss the phenomenon of im-perfect mastery, often associated with deference, and which we show to be independent both of linguistic deference and of epistemic deference. If our analysis is correct, then some recent debates on deference can be shown to result from a failure to appreciate all the distinctions that we draw here.},
+abstract = {Our aim in this paper is to clarify the distinctions and the relationships among several phenomena, each of which has certain characteristics of what is generally called deference. We distinguish linguistic deference, which concerns the use of language and the meaning of the words we use, from epistemic deference, which concerns our reasons and evidence for making the claims we make. In our in-depth study of linguistic deference, we distinguish two subcategories: default deference, and deliberate deference. We also discuss the phenomenon of imperfect mastery, often associated with deference, and which we show to be independent both of linguistic deference and of epistemic deference. If our analysis is correct, then some recent debates on deference can be shown to result from a failure to appreciate all the distinctions that we draw here.},
 pdf = {Brabanter-et-al-Les-usages-deferentiels},
 }
 
@@ -137,7 +129,7 @@ pdf = {Florio-Nicolas-Plurals-and-mereology},
 }
 
 @article{JustoEtAl2003,
-author = {Justo, Damián and Dutant, Julien and Hardy-Vallée, Benoît and Nicolas, David and Sylvand, Benjamin Q.},
+author = {Justo, Dami\'{a}n and Dutant, Julien and Hardy-Vall\'{e}e, Beno\^{i}t and Nicolas, David and Sylvand, Benjamin Q.},
 title = {Delegation, Subdivision, and Modularity: {H}ow Rich Is Conceptual Structure?},
 year = {2003},
 journal = {Behavioral and Brain Sciences},
@@ -178,7 +170,7 @@ pdf = {Lefeuvre-Nicolas-Telicite},
 }
 
 @article{LinneboNicolas2008,
-author = {Linnebo, \{O}ystein and Nicolas, David},
+author = {Linnebo, {\O}ystein and Nicolas, David},
 title = {Superplurals in {E}nglish},
 year = {2008},
 journal = {Analysis},
@@ -192,7 +184,7 @@ pdf = {Linnebo-Nicolas-Superplurals},
 
 @unpublished{Nicolas2002a,
 author = {Nicolas, David},
-title = {Conversions of Count Nouns into Mass Nouns in French: {T}he Roles of Semantic and Pragmatic Factors in their Interpretations},
+title = {Conversions of Count Nouns into Mass Nouns in {F}rench: {T}he Roles of Semantic and Pragmatic Factors in their Interpretations},
 year = {2002},
 note = {Working Paper. {O}pen archive {HAL}},
 hal_id = {ijn_00000623},
@@ -244,7 +236,7 @@ author = {Nicolas, David},
 title = {Is there Anything Characteristic about the Meaning of a Count Noun?},
 journal = {Revue de la Lexicologie},
 year = {2004},
-volume = {18-19},
+volume = {18--19},
 pages = {125--138},
 abstract = {In English, some common nouns, like 'cat', can be used in the singular and in the plural, while others, like 'water', are invariable. Moreover, nouns like 'cat' can be employed with numerals like 'one' and 'two' and determiners like 'a', 'many' and 'few', but neither with 'much' nor 'little'. On the contrary, nouns like 'milk' can be used with determiners like 'much' and 'little', but neither with 'a', 'one' nor 'many'. These two types of nouns constitute two morphosyntactic sub-classes of English common nouns; cf. for instance Gillon (1992). They have been respectively called count nouns and mass nouns. In many languages, notably Romance and Germanic languages, one can similarly identify two morphosyntactic subclasses of common nouns, nouns of one class admitting singular and plural number, and nouns of the other being invariable in grammatical number. The question we want to address in this paper is one in lexical semantics: Is there anything characteristic about the meaning of a count noun?},
 pdf = {Nicolas-Count-nouns},
@@ -337,8 +329,8 @@ volume = {31},
 number = {2},
 pages = {211--244},
 doi = {10.1007/s10988-008-9033-2},
-abstract = {A dilemma put forward by Schein (1993, Plurals and events. Cambridge: MIT Press) and Rayo (2002, Noûs, 36, 436–464) suggests that, in order to characterize the semantics of plurals, we should not use predicate logic, but plural logic, a formal language whose terms may refer to several things at once. We show that a similar dilemma applies to mass nouns. If we use predicate logic and sets when characterizing their semantics, we arrive at a Russellian paradox. And if we use predicate logic and mereological sums, the semantics turns out to be too weak. We then develop an account where mass nouns are treated as non-singular terms. This semantics is faithful to the intuition that, if there are eight pieces of silverware on a table, the speaker refers to eight things at once when he says: 'The silverware that is on the table comes from Italy'. We show that this account provides a satisfactory semantics for a wide range of sentences.}, pdf = {Nicolas-Mass-nouns-and-plural-logic}, 
-pdf = {Nicolas-The-logic-of-mass-expressions},
+abstract = {A dilemma put forward by Schein (1993, Plurals and events. Cambridge: MIT Press) and Rayo (2002, Noûs, 36, 436–464) suggests that, in order to characterize the semantics of plurals, we should not use predicate logic, but plural logic, a formal language whose terms may refer to several things at once. We show that a similar dilemma applies to mass nouns. If we use predicate logic and sets when characterizing their semantics, we arrive at a Russellian paradox. And if we use predicate logic and mereological sums, the semantics turns out to be too weak. We then develop an account where mass nouns are treated as non-singular terms. This semantics is faithful to the intuition that, if there are eight pieces of silverware on a table, the speaker refers to eight things at once when he says: 'The silverware that is on the table comes from Italy'. We show that this account provides a satisfactory semantics for a wide range of sentences.},
+pdf = {Nicolas-Mass-nouns-and-plural-logic},
 }
 
 @article{Nicolas2009,
@@ -402,7 +394,7 @@ type = {review},
 
 @article{Nicolas2016,
 author = {Nicolas, David},
-title = {Interpr\'{e}tons-nous de la Même Mani\`{e}re les Expressions \textit{deux pommes} et \textit{deux pommes et demie}?},
+title = {Interpr\'{e}tons-nous de la M\^{e}me Mani\`{e}re les Expressions \textit{deux pommes} et \textit{deux pommes et demie}?},
 year = {2016},
 journal = {Travaux de Linguistique},
 issuetitle = {D\'{e}terminants et Inf\'{e}rences},
@@ -443,9 +435,9 @@ author = {Nicolas, David},
 title = {The Logic of Mass Expressions},
 booktitle = {The {S}tanford Encyclopedia of Philosophy},
 editor = {Zalta, Edward N. and Nodelman, Uri},
-date = {2024},
-edition = {Spring 2024 edition},
-publisher = {Stanford University},
+year = {2024},
+edition = {Spring 2024},
+publisher = {Metaphysics Research Lab, Stanford University},
 address = {Stanford},
 url = {https://plato.stanford.edu/archives/spr2024/entries/logic-massexpress/},
 abstract = {In many languages, like English, nominal expressions headed by common nouns can be divided into two subtypes, mass expressions (like 'wine', 'silverware', 'wisdom') and count expressions (like 'cat', 'army', 'idea'). We first characterize what mass expressions are. Then we discuss various proposals concerning their semantics and their logic.},
@@ -455,10 +447,10 @@ pdf = {Nicolas-The-logic-of-mass-expressions},
 
 @incollection{Nicolas2026,
 author = {Nicolas, David},
-title = {Plurals, Mass Nouns and Reference: Philosophical Issues},
+title = {Plurals, Mass Nouns and Reference: {P}hilosophical Issues},
 year = {2026},
 volume = {2},
-pages = {455-460},
+pages = {455--460},
 editor = {Nesi, Hilary and Milin, Petar},
 booktitle = {Int. Encycl. of Language \& Linguistics (3rd ed.)},
 edition = {Third Edition},
@@ -471,7 +463,7 @@ pdf = {Nicolas-Plurals-mass-nouns-and-reference},
 }
 
 @article{NicolasPayton2025,
-author = {Nicolas, David and Payton, Jonathan},
+author = {Nicolas, David and Payton, Jonathan D.},
 title = {Collective Nouns and the Distribution Problem},
 year = {2025},
 journal = {Synthese},
@@ -483,8 +475,8 @@ abstract = {Intuitively, collective nouns are pseudo-singular: a collection of t
 pdf = {Nicolas-Payton-Collective-nouns-and-the-distribution-problem},
 }
 
-@article{NicolasPaytonInPress,
-author = {Nicolas, David and Payton, Jonathan},
+@article{NicolasPaytonInPressSuperplurals,
+author = {Nicolas, David and Payton, Jonathan D.},
 title = {Superplurals Analyzed Away},
 year = {In Press},
 journal = {Inquiry},
@@ -496,8 +488,8 @@ abstract = {Many natural languages include plural terms, i.e. terms which denote
 pdf = {Nicolas-Payton-Superplurals-analyzed-away},
 }
 
-@article{NicolasPaytonInPress,
-author = {Nicolas, David and Payton, Jonathan D},
+@article{NicolasPaytonInPressPartitives,
+author = {Nicolas, David and Payton, Jonathan D.},
 title = {Partitives, Groups, and Wholes},
 year = {In Press},
 journal = {The Philosophical Quarterly},
